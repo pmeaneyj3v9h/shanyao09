@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>wx demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/wx.css">
+    <style>
+        body {padding-top: 40px; background: #666666; font-family: "微软雅黑";}
+        .mobileframe {background: #ebebeb; overflow: hidden; height: 640px; margin-bottom: 40px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <ul class="wx-messages">
+                        <li class="wx-item">
+                            <div class="wx-time">早上10:24</div>
+                            <span class="wx-icon wx-icon-apple">
+                                <i class="fa fa-wechat"></i>
+                            </span>
+                            <div class="wx-name">微信团队</div>
+                            <div class="wx-content">微信团队：登陆操作通知</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">早上05:12</div>
+                            <span class="wx-icon wx-icon-bostonblue">
+                                <i class="fa fa-line-chart"></i>
+                            </span>
+                            <div class="wx-name">理财通</div>
+                            <div class="wx-content">理财通：网银大额充值开通提醒</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">凌晨02:56</div>
+                            <span class="wx-icon wx-icon-sanmarino">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <div class="wx-name">腾讯企业邮箱</div>
+                            <div class="wx-content">腾讯企业邮箱：新邮件通知</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">凌晨01:28</div>
+                            <span class="wx-icon wx-icon-sanmarino">
+                                <i class="fa fa-credit-card"></i>
+                            </span>
+                            <div class="wx-name">通讯录安全助手</div>
+                            <div class="wx-content">您已经16天没有备份了</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">昨天</div>
+                            <span class="wx-icon wx-icon-darkcoral">JD</span>
+                            <div class="wx-name">京东JD.COM</div>
+                            <div class="wx-content">简单的文本也能做出像摸像样的图标</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">周二</div>
+                            <span class="wx-icon wx-icon-rawsienna">淘</span>
+                            <div class="wx-name">淘宝</div>
+                            <div class="wx-content">不过以上图标都只是拙劣的模仿</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">周一</div>
+                            <img src="http://upload.wikimedia.org/wikipedia/commons/8/88/Farbkreis_Itten_1961.png" class="wx-icon">
+                            <div class="wx-name">Farbkreis</div>
+                            <div class="wx-content">如果想精致一些就果断使用图片吧</div>
+                        </li>
+                        <li class="wx-item">
+                            <div class="wx-time">3月27日</div>
+                            <span class="wx-icon wx-yang">😊</span>
+                            <div class="wx-name">Emoji</div>
+                            <div class="wx-content">可以使用，但不能保证跨平台的一致性</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-group">
+                        <div class="wx-contacts">
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-rawsienna">
+                                    <i class="fa fa-user-plus"></i>
+                                </span>
+                                <div class="wx-name">新的朋友</div>
+                            </a>
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-apple">
+                                    <i class="fa fa-users"></i>
+                                </span>
+                                <div class="wx-name">群聊</div>
+                            </a>
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino">
+                                    <i class="fa fa-tag"></i>
+                                </span>
+                                <div class="wx-name">标签</div>
+                            </a>
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-bostonblue">
+                                    <i class="fa fa-user-times"></i>
+                                </span>
+                                <div class="wx-name">公众号</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title">企业号</div>
+                        <div class="wx-contacts">
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-bostonblue">
+                                    <i class="fa fa-paper-plane"></i>
+                                </span>
+                                <div class="wx-name">企业号管理员助手</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title">W</div>
+                        <div class="wx-contacts">
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-apple">
+                                    <i class="fa fa-wechat"></i>
+                                </span>
+                                <div class="wx-name">微信团队</div>
+                            </a>
+                            <a class="wx-item">
+                                <span class="wx-icon wx-icon-apple">
+                                    <i class="fa fa-folder-open-o"></i>
+                                </span>
+                                <div class="wx-name">文件传输助手</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-apple wx-yang">
+                                    <i class="fa fa-circle-o"></i>
+                                </span>
+                                <div class="wx-name">朋友圈</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino wx-yang">
+                                    <i class="fa fa-qrcode"></i>
+                                </span>
+                                <div class="wx-name">扫一扫</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino wx-yang">
+                                    <i class="fa fa-coffee"></i>
+                                </span>
+                                <div class="wx-name"><span style="display: none;">喝前</span>摇一摇</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino wx-yang">
+                                    <i class="fa fa-users"></i>
+                                </span>
+                                <div class="wx-name">附近的人</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-darkcoral wx-yang">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </span>
+                                <div class="wx-name">购物</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-apple wx-yang">
+                                    <i class="fa fa-gamepad"></i>
+                                </span>
+                                <div class="wx-name">游戏</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-settings">
+                            <li class="wx-item">
+                                <span class="wx-content">wx</span>
+                                <div class="wx-name">名称</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-content">v0.1.0</span>
+                                <div class="wx-name">版本</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-content">xiongliding</span>
+                                <div class="wx-name">作者</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wx-group">
+                        <div class="wx-title"></div>
+                        <ul class="wx-settings">
+                            <li class="wx-item">
+                                <span class="wx-content"><a href="http://git.oschina.net/xiongliding/wx">git.oschina.net</a></span>
+                                <div class="wx-name">代码</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-content"><a href="http://wxcss.oschina.mopaas.com/demo.html">wxcss.oschina.mopaas.com</a></span>
+                                <div class="wx-name">演示</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-group">
+                        <div class="wx-title">12种色彩</div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-apple">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Apple</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-bostonblue">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Boston Blue</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">San Marino</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-blueviolet">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Blue Violet</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-deeplilac">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Deep Lilac</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-mulberry">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Mulberry</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-darkcoral">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Dark Coral</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-rawsienna">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Raw Sienna</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-tussock">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Tussock</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-turmeric">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Turmeric</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-wattle">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Wattle</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-androidgreen">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Android Green</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-group">
+                        <div class="wx-title">图标也可以使用阳文，并保证整体的大小一致</div>
+                        <ul class="wx-functions">
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-apple wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Apple</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-bostonblue">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Boston Blue</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-sanmarino wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">San Marino</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-blueviolet">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Blue Violet</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-deeplilac wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Deep Lilac</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-mulberry">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Mulberry</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-darkcoral wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Dark Coral</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-rawsienna">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Raw Sienna</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-tussock wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Tussock</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-turmeric">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Turmeric</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-wattle wx-yang">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Wattle</div>
+                            </li>
+                            <li class="wx-item">
+                                <span class="wx-icon wx-icon-androidgreen">
+                                    <i class="fa fa-flag"></i>
+                                </span>
+                                <div class="wx-name">Android Green</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
