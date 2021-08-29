@@ -10,9 +10,26 @@
     <style>
         body {padding-top: 40px; background: #666666; font-family: "Heiti SC", "DroidSansFallback",  "微软雅黑";}
         .mobileframe {background: #ebebeb; overflow: hidden; height: 640px; margin-bottom: 40px;}
+        @media (max-device-width: 480px) {
+            .col-lg-4, .col-sm-6 {
+                padding: 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <script>
+        // 支持物理像素
+        if (window.devicePixelRatio && devicePixelRatio >= 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hairlines');
+            }
+            document.body.removeChild(testElem);
+        }
+    </script>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-6">
@@ -67,12 +84,6 @@
                             <img src="http://upload.wikimedia.org/wikipedia/commons/8/88/Farbkreis_Itten_1961.png" class="wx-icon">
                             <div class="wx-name">Farbkreis</div>
                             <div class="wx-content">如果想精致一些就果断使用图片吧</div>
-                        </li>
-                        <li class="wx-item">
-                            <div class="wx-time">3月27日</div>
-                            <span class="wx-icon wx-yang">😊</span>
-                            <div class="wx-name">Emoji</div>
-                            <div class="wx-content">可以使用，但不能保证跨平台的一致性</div>
                         </li>
                     </ul>
                 </div>
@@ -210,7 +221,7 @@
                                 <div class="wx-name">名称</div>
                             </li>
                             <li class="wx-item">
-                                <span class="wx-content">v0.1.0</span>
+                                <span class="wx-content">v0.2.0</span>
                                 <div class="wx-name">版本</div>
                             </li>
                             <li class="wx-item">

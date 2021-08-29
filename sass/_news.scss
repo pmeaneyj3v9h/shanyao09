@@ -1,6 +1,8 @@
 .wx-news {
     margin: 12px 16px 28px;
-    background: $color-white;
+    @include physical-border($color-line);
+    border-radius: 2px;
+    background-color: $color-white;
     list-style: none;
 
     > .wx-item:first-child {
@@ -26,8 +28,8 @@
 
     > .wx-item:not(:first-child) {
         padding: 8px 8px 8px 16px;
-        @include slice-top($color-line);
-        
+        @include physical-border-top($color-line);
+
         > .wx-icon {
             @include icon(50px);
             float: right;
