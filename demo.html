@@ -6,11 +6,14 @@
     <title>wx demo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets/wx.css">
+    <script>
+        document.write('<link rel="stylesheet" href="stylesheets/wx.css?' + (+new Date()) + '">');
+    </script>
     <style>
-        body {padding-top: 40px; background: #666666; font-family: "Heiti SC", "DroidSansFallback",  "微软雅黑";}
-        .mobileframe {background: #ebebeb; overflow: hidden; height: 640px; margin-bottom: 40px;}
-        @media (max-device-width: 480px) {
+        body {padding-top: 40px; padding-bottom: 40px; background: #666666; font-family: "Heiti SC", "DroidSansFallback",  "微软雅黑";}
+        .mobileframe {background: #ebebeb; overflow: hidden; height: 640px; margin-bottom: 40px; position: relative;}
+        .mobileframe .wx-menu {position: absolute;}
+        @media (max-width: 480px) {
             .col-lg-4, .col-sm-6 {
                 padding: 0;
             }
@@ -469,6 +472,26 @@
                             Sit lorem suscipit modi quam hic. A dolorum illum eaque?
                             Amet enim expedita nemo voluptatem dicta expedita quod voluptate eligendi?
                             Adipisicing asperiores natus nam quisquam vel eligendi repudiandae quibusdam assumenda!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- wx-menu -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-menu">
+                        <div class="wx-item">
+                            天地玄黄
+                        </div>
+                        <div class="wx-item">
+                            宇宙洪荒
+                        </div>
+                        <div class="wx-item">
+                            日月盈昃
+                        </div>
+                        <div class="wx-item">
+                            辰宿列张
                         </div>
                     </div>
                 </div>
