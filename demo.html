@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>wx demo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -224,7 +224,7 @@
                                 <div class="wx-name">名称</div>
                             </li>
                             <li class="wx-item">
-                                <span class="wx-content">v0.2.1</span>
+                                <span class="wx-content">v0.3.0</span>
                                 <div class="wx-name">版本</div>
                             </li>
                             <li class="wx-item">
@@ -488,6 +488,33 @@
                             Amet enim expedita nemo voluptatem dicta expedita quod voluptate eligendi?
                             Adipisicing asperiores natus nam quisquam vel eligendi repudiandae quibusdam assumenda!
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- wx-form -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="mobileframe">
+                    <div class="wx-form">
+                        <div class="wx-item">
+                            <label class="wx-name">问题和意见</label>
+                            <textarea class="wx-content" placeholder="请简要描述你的问题和意见"></textarea>
+                        </div>
+                        <div class="wx-item">
+                            <label class="wx-name">文本框自适应高度的方法</label>
+                            <div class="wx-content" contentEditable placeholder="这是一个带有 contentEditable 属性并模拟了 placeholder 属性的 div，它的特点是高度会自动随着文本的增加而升高，但提交表单时必须先用 javascript 获取其内容"></div>
+                        </div>
+                        <div class="wx-item">
+                            <label class="wx-name">上传照片</label>
+                            <div class="wx-content">
+                                <div style="background-image: url(http://static.pexels.com/wp-content/uploads/2015/02/cliff-nature-river-4630-525x350.jpg)" class="wx-icon"></div>
+                                <div style="background-image: url(http://static.pexels.com/wp-content/uploads/2015/02/bird-boat-heron-4490-525x350.jpg)" class="wx-icon"></div>
+                                <div class="wx-plus"></div>
+                            </div>
+                        </div>
+                        <button class="wx-button wx-primary">进入公众号</button>
+                        <button class="wx-button wx-danger">取消关注</button>
+                        <button class="wx-button">举报</button>
                     </div>
                 </div>
             </div>
