@@ -591,6 +591,7 @@ body {
 /* line 15, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content {
   border: none;
+  box-sizing: border-box;
   display: block;
   width: 100%;
   min-height: 5em;
@@ -628,12 +629,12 @@ body {
 .wx-form > .wx-item > .wx-content::-webkit-input-placeholder {
   color: #a9a9a9;
 }
-/* line 32, ../sass/_form.scss */
+/* line 33, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content[contentEditable]:empty:before {
   content: attr(placeholder);
   color: #a9a9a9;
 }
-/* line 37, ../sass/_form.scss */
+/* line 38, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content > .wx-icon {
   width: 64px;
   height: 64px;
@@ -641,8 +642,9 @@ body {
   float: left;
   margin: 7px 12px 7px 0;
 }
-/* line 45, ../sass/_form.scss */
+/* line 46, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content > .wx-plus {
+  box-sizing: border-box;
   width: 64px;
   height: 64px;
   border: 1px solid #d8d8d8;
@@ -651,27 +653,27 @@ body {
   float: left;
   position: relative;
 }
-/* line 54, ../sass/_form.scss */
+/* line 56, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content > .wx-plus:before {
   position: absolute;
-  left: 31px;
+  left: 30px;
   top: 15px;
   width: 2px;
-  height: 34px;
+  height: 32px;
   background: #d8d8d8;
   content: "";
 }
-/* line 64, ../sass/_form.scss */
+/* line 66, ../sass/_form.scss */
 .wx-form > .wx-item > .wx-content > .wx-plus:after {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 15px;
-  width: 34px;
+  width: 32px;
   height: 2px;
   background: #d8d8d8;
   content: "";
 }
-/* line 77, ../sass/_form.scss */
+/* line 79, ../sass/_form.scss */
 .wx-form > .wx-button {
   font-size: 18px;
   display: block;
@@ -684,25 +686,37 @@ body {
   color: #353535;
   background-color: #ffffff;
 }
-/* line 88, ../sass/_form.scss */
+/* line 90, ../sass/_form.scss */
+.wx-form > .wx-button[disabled] {
+  color: rgba(53, 53, 53, 0.5);
+}
+/* line 93, ../sass/_form.scss */
 .wx-form > .wx-button:active {
   background-color: #f5f5f5;
 }
-/* line 92, ../sass/_form.scss */
+/* line 97, ../sass/_form.scss */
 .wx-form > .wx-button.wx-primary {
   color: #ffffff;
   background-color: #45c01a;
 }
-/* line 95, ../sass/_form.scss */
+/* line 100, ../sass/_form.scss */
+.wx-form > .wx-button.wx-primary[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 103, ../sass/_form.scss */
 .wx-form > .wx-button.wx-primary:active {
   background-color: #298409;
 }
-/* line 100, ../sass/_form.scss */
+/* line 108, ../sass/_form.scss */
 .wx-form > .wx-button.wx-danger {
   color: #ffffff;
   background-color: #ff5454;
 }
-/* line 103, ../sass/_form.scss */
+/* line 111, ../sass/_form.scss */
+.wx-form > .wx-button.wx-danger[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 114, ../sass/_form.scss */
 .wx-form > .wx-button.wx-danger:active {
   background-color: #d24242;
 }
