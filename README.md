@@ -19,17 +19,17 @@
 ![demo](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wxcss.oschina.mopaas.com/demo.html)
 
 ## 组件
-wx-button
-wx-cells
+- wx-button
+- wx-cells
 
 ### 计划中
 #### weui
-wx-select
-wx-form
-wx-toast
-wx-dialog
-wx-progress
-wx-action
+- wx-select
+- wx-form
+- wx-toast
+- wx-dialog
+- wx-progress
+- wx-action
 
 #### other
 
