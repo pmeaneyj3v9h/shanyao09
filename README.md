@@ -21,17 +21,14 @@
 ## 组件
 - wx-button
 - wx-cells
+- wx-select
 
 ### 计划中
-#### weui
-- wx-select
 - wx-form
 - wx-toast
 - wx-dialog
 - wx-progress
 - wx-action
-
-#### other
 
 ## License
 [The MIT License](/xiongliding/wx/blob/master/LICENSE)
