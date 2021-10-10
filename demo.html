@@ -105,6 +105,13 @@
                 text: '自定义弹窗内容',
             });
         };
+        var showDialogConfirm = function () {
+            riot.mount('#wx-dialog', 'wx-dialog', {
+                confirm: true,
+                main: '弹窗标题',
+                text: '自定义弹窗内容',
+            });
+        };
     </script>
 </body>
 </html>
