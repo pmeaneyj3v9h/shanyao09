@@ -6,6 +6,10 @@
 [demo](http://wxcss.oschina.mopaas.com/demo.html)
 中的代码来实现想要的效果。
 
+手机可以直接扫这个二维码。
+
+![demo](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wxcss.oschina.mopaas.com/demo.html)
+
 # Feature
 - 模拟聊天记录界面
 - 模拟通讯录界面
@@ -49,4 +53,4 @@
 这个项目是专门为微信中的页面设计的，因此最终以 Android 和 iOS 版微信中的显示效果为准，其他浏览器的显示问题不在考虑范围之内。
 
 # License
-[The MIT License](/blob/master/LICENSE)
+[The MIT License](/xiongliding/wx/blob/master/LICENSE)
