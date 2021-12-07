@@ -3,7 +3,9 @@
     padding: 0 $side-gap;
     > .wx-item {
         padding: $function-padding-vertical 0;
-        @include topline;
+        &:not(:first-child) {
+            @include physical-border-top($color-line);
+        }
         .wx-icon {
             @include icon($function-icon-size);
             margin: 0 $function-icon-gap;
@@ -14,4 +16,3 @@
         }
     }
 }
-

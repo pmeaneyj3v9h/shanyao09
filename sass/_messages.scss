@@ -3,9 +3,8 @@
     > .wx-item {
         background: $color-white;
         padding: $message-padding-vertical $side-gap;
-        border-top: 1px solid $color-line;
-        &:first-child {
-            border-top: none;
+        &:not(:first-child) {
+            @include physical-border-top($color-line);
         }
         .wx-icon {
             @include icon($message-icon-size);
