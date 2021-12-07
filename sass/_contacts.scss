@@ -4,7 +4,8 @@
     padding: 0 $side-gap;
     > .wx-item {
         padding: $contact-padding-vertical 0;
-        border-top: 1px solid $color-line;
+        @include slice-top($color-line);
+        //border-top: 1px solid $color-line;
         &:first-child {
             border-top: none;
         }
