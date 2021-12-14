@@ -13,7 +13,6 @@
     .wx-item {
         @include oneline(49px, 16px, $color-main);
         display: table-cell;
-        flex-grow: 1;
         text-align: center;
 
         &:not(:first-child) {
