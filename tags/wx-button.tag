@@ -3,8 +3,6 @@ wx-button
         <yield/>
 
     script(type="text/es6").
-        var tag = this;
-        console.log(tag);
 
     style(scoped).
         :scope {
