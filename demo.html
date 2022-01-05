@@ -33,6 +33,11 @@
             <div id="single-select"></div>
             <div id="multi-select"></div>
         </div>
+        <div class="toast">
+            <wx-button onclick="showToastDone()">show toast done</wx-button>
+            <wx-button onclick="showToastLoading()">show toast loading</wx-button>
+            <div id="wx-toast"></div>
+        </div>
     </app>
     <script>
         // 支持物理像素
@@ -74,6 +79,21 @@
             },
             multiple: true
         });
+        var showToastDone = function () {
+            riot.mount('#wx-toast', 'wx-toast', {
+                main: '已完成',
+                timeout: 3000,
+                ontimeout: function () {}
+            });
+        };
+        var showToastLoading = function () {
+            riot.mount('#wx-toast', 'wx-toast', {
+                sign: 'loading',
+                main: '数据加载中',
+                timeout: 3000,
+                ontimeout: function () {}
+            });
+        };
     </script>
 </body>
 </html>
