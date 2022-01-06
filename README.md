@@ -7,8 +7,6 @@
 
 由于微信官方推出了 [weui](http://weui.github.io/weui/) ，这个项目的样式基本都是直接从该项目抄过来，然后根据实际需要进行了些许调整，因此风格从原来的 Android 换成了 iOS.
 
-目前完成 wx-button 和 wx-cells 两个组件，
-
 ## Demo
 目前文档还在完善，不过，你暂时可以按照这个非常直观的
 [demo](http://wxcss.oschina.mopaas.com/demo.html)
@@ -22,10 +20,10 @@
 - wx-button
 - wx-cells
 - wx-select
+- wx-toast \[partial\]
 
 ### 计划中
 - wx-form
-- wx-toast
 - wx-dialog
 - wx-progress
 - wx-action
