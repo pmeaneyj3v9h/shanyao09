@@ -12,6 +12,14 @@ tag.on('mount', function () {
 });
 });
 
+riot.tag('wx-dialog', '<div class="mask"> <div class="dialog { alert: !opts.confirm, confirm: opts.confirm }"> <div class="main">{ opts.main }</div> <div class="text">{ opts.text }</div> <div class="foot"> <div onclick="{ oncancel }" class="cancel">取消</div> <div onclick="{ oncancel }" class="confirm">确认</div> </div> </div> </div>', 'wx-dialog, [riot-tag="wx-dialog"]{ line-height: 1.6em; } wx-dialog .mask, [riot-tag="wx-dialog"] .mask{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: rgba(0, 0, 0, 0.6); } wx-dialog .dialog, [riot-tag="wx-dialog"] .dialog{ position: absolute; width: 85%; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: #fafafc; text-align: center; border-radius: 3px; } wx-dialog .main, [riot-tag="wx-dialog"] .main{ padding: 1.2em 0 .5em; } wx-dialog .text, [riot-tag="wx-dialog"] .text{ padding: 0 20px; font-size: 15px; color: #888; } wx-dialog .foot, [riot-tag="wx-dialog"] .foot{ position: relative; line-height: 42px; margin-top: 20px; font-size: 17px; } wx-dialog .foot:after, [riot-tag="wx-dialog"] .foot:after{ content: " "; position: absolute; left: 0; top: 0; width: 100%; height: 1px; border-top: 1px solid #d5d5d6; -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleY(0.5); -ms-transform: scaleY(0.5); transform: scaleY(0.5); } wx-dialog .alert .cancel, [riot-tag="wx-dialog"] .alert .cancel{ display: none; } wx-dialog .alert .confirm, [riot-tag="wx-dialog"] .alert .confirm{ color: #0bb20c; }', function(opts) {
+var tag = this;
+
+tag.oncancel = function () {
+    tag.unmount(true);
+};
+});
+
 riot.tag('wx-select', '<wx-cells-base title="{ opts.title }" options="{ opts.options }" class="{single: !opts.multiple, multiple: opts.multiple}"> <div each="{ opts.options }" onclick="{ parent.parent.click }" class="cell clickable {selected: selected }"> <div class="check"></div> <div class="main">{ main }</div> </div> </wx-cells-base>', 'wx-select .multiple .check, [riot-tag="wx-select"] .multiple .check{ float: left; font-size: 23px; line-height: 23px; padding-right: 0.35em; vertical-align: top; } wx-select .multiple .check:before, [riot-tag="wx-select"] .multiple .check:before{ content: \'\\EA01\'; color: #c9c9c9; font-family: weui; } wx-select .multiple .selected .check:before, [riot-tag="wx-select"] .multiple .selected .check:before{ content: \'\\EA06\'; color: #09BB07; } wx-select .single .check, [riot-tag="wx-select"] .single .check{ float: right; } wx-select .single .selected .check:before, [riot-tag="wx-select"] .single .selected .check:before{ content: \'\\EA08\'; color: #09BB07; font-family: weui; font-size: 16px; } wx-select .main, [riot-tag="wx-select"] .main{ line-height: 24px; }', function(opts) {
 var tag = this;
 

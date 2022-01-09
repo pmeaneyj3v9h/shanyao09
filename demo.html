@@ -38,6 +38,11 @@
             <wx-button onclick="showToastLoading()">show toast loading</wx-button>
             <div id="wx-toast"></div>
         </div>
+        <div class="dialog">
+            <wx-button onclick="showDialogAlert()">show dialog alert</wx-button>
+            <wx-button onclick="showDialogConfirm()">show dialog confirm</wx-button>
+            <div id="wx-dialog"></div>
+        </div>
     </app>
     <script>
         // 支持物理像素
@@ -92,6 +97,12 @@
                 main: '数据加载中',
                 timeout: 3000,
                 ontimeout: function () {}
+            });
+        };
+        var showDialogAlert = function () {
+            riot.mount('#wx-dialog', 'wx-dialog', {
+                main: '弹窗标题',
+                text: '自定义弹窗内容',
             });
         };
     </script>
