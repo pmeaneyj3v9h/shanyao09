@@ -34,8 +34,12 @@ wx-button
             box-sizing: border-box;
             border-radius: 10px;
             border: 1px solid rgba(0,0,0,0.2);
-            transform: scale(0.5);
-            transform-origin: 0 0;
+            -webkit-transform: scale(0.5);
+                -ms-transform: scale(0.5);
+                    transform: scale(0.5);
+            -webkit-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                    transform-origin: 0 0;
         }
 
         button:active {

@@ -5,7 +5,7 @@ wx-dialog
             .text { opts.text }
             .foot
                 .cancel(onclick="{ oncancel }") 取消
-                .confirm(onclick="{ oncancel }") 确认
+                .accept(onclick="{ oncancel }") 确认
 
     script(type="text/es6").
         var tag = this;
@@ -75,10 +75,19 @@ wx-dialog
                     transform: scaleY(0.5);
         }
 
+        .accept {
+            color: #0bb20c;
+        }
+
         .alert .cancel {
             display: none;
         }
 
-        .alert .confirm {
-            color: #0bb20c;
+        .confirm .cancel {
+            float: left;
+            width: 50%;
+        }
+
+        .confirm .accept {
+            margin-left: 50%;
         }

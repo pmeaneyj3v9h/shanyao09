@@ -33,7 +33,9 @@ wx-cells
         .clickable .text:after {
             content: " ";
             display: inline-block;
-            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
             height: 6px;
             width: 6px;
             border-width: 2px 2px 0 0;
