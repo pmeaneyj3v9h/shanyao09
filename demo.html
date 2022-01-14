@@ -43,6 +43,9 @@
             <wx-button onclick="showDialogConfirm()">show dialog confirm</wx-button>
             <div id="wx-dialog"></div>
         </div>
+        <div class="progress">
+            <wx-progress></wx-progress>
+        </div>
     </app>
     <script>
         // 支持物理像素
@@ -112,6 +115,10 @@
                 text: '自定义弹窗内容',
             });
         };
+        riot.mount('wx-progress', {
+            percent: 0.5,
+            oncancel: function () { alert('Cancel') },
+        });
     </script>
 </body>
 </html>
