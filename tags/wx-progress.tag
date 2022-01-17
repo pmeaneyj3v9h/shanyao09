@@ -1,19 +1,27 @@
 wx-progress
     .progress
-        .cancel(if="{ opts.oncancel }", onclick="{ opts.oncancel }")
         .bar
             .percent(style="width: { opts.percent * 100 }%")
+        .cancel(if="{ opts.oncancel }", onclick="{ opts.oncancel }")
 
     script(type="text/es6").
         var tag = this;
 
     style(scoped).
         .progress {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             padding: 0 15px;
         }
 
         .cancel {
-            float: right;
+            margin-left: 15px;
         }
 
         .cancel:before {
