@@ -21,11 +21,11 @@
 - wx-cells
 - wx-select
 - wx-toast \[partial\]
+- wx-dialog \[partial\]
+- wx-progress
 
 ### 计划中
 - wx-form
-- wx-dialog
-- wx-progress
 - wx-action
 
 ## License
